@@ -1,4 +1,26 @@
 body {
   font-family: Arial, sans-serif;
   margin: 24px;
+  line-height: 1.5;
 }
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+main h2 {
+  margin-top: 16px;
+}
+
+section {
+  margin-top: 16px;
+}
+
