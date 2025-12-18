@@ -4,6 +4,7 @@ body {
   line-height: 1.5;
 }
 
+/* Navegação */
 .site-nav a {
   text-decoration: none;
 }
@@ -12,8 +13,14 @@ body {
   text-decoration: underline;
 }
 
+.site-nav a.is-active,
 .is-active {
   font-weight: bold;
+}
+
+/* Conteúdo */
+main {
+  max-width: 900px;
 }
 
 main h2 {
@@ -23,4 +30,14 @@ main h2 {
 section {
   margin-top: 16px;
 }
+
+/* Lista com subpontos (opcional) */
+.checklist {
+  padding-left: 18px;
+}
+
+.checklist ul {
+  margin-top: 6px;
+}
+
 
