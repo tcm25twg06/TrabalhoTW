@@ -40,4 +40,24 @@ section {
   margin-top: 6px;
 }
 
+.before-after {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.case {
+  margin: 0;
+  flex: 1 1 280px;
+}
+
+.case img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.improvements {
+  margin: 8px 0 0 18px;
+}
 
