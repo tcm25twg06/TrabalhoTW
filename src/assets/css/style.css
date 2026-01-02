@@ -1,35 +1,259 @@
+/* =========================================================
+   Tecnologias Web — TrabalhoTW (Grupo 6)
+   CSS externo (sem estilos inline)
+   ========================================================= */
+
+/* Reset simples */
+* { box-sizing: border-box; }
+
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #222;
+  background-color: #f4f4f4; /* cor de fundo */
+  background-image: url("../img/pattern.svg"); /* imagem de fundo (requisito) */
+  background-repeat: repeat;
 }
 
+/* Seletor por ID (requisito) */
+#conteudo { scroll-margin-top: 16px; }
+
 .container {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 16px;
 }
 
-.site-header,
-.site-footer {
-  background-color: #333;
+/* Header */
+.site-header {
+  background-color: #2c3e50;
   color: #fff;
+  border-bottom: 5px solid #e67e22;
+  position: relative; /* posicionamento (requisito) */
 }
 
+/* Substituição de um elemento por imagem (requisito) */
+.brand-badge {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 120px;
+  height: 40px;
+  background-image: url("../img/badge.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px; /* substitui texto pela imagem */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Pseudo-elemento (requisito) */
+.site-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #e67e22;
+  margin-top: 8px;
+}
+
+/* Navegação — flutuação (requisito) */
+.site-nav ul {
+  list-style: none; /* formatação de lista (requisito) */
+  padding: 0;
+  margin: 12px 0 0;
+  overflow: hidden; /* limpa floats */
+  background: #333;
+  border-radius: 6px;
+}
+
+/* Seletor combinador (requisito) */
+.site-nav ul > li { float: left; }
+
 .site-nav a {
+  display: block;
+  padding: 12px 14px;
   color: #fff;
-  margin-right: 12px;
   text-decoration: none;
 }
 
 .site-nav a.is-active {
+  background: #111;
+  font-weight: 700;
+}
+
+/* Pseudo-classe (requisito) */
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #111;
+  outline: none;
+}
+
+/* Links externos — seletor por atributo (requisito) */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.9em;
+}
+
+/* Main */
+main {
+  background: #fff;
+  margin: 16px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* Texto com destaque (requisito) */
+mark {
+  background: #fff2cc;
+  padding: 0 4px;
+}
+.emph {
+  font-style: italic;
   text-decoration: underline;
 }
 
-.before-after {
-  display: flex;
-  gap: 20px;
+/* Cartões / secções */
+section {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
 }
 
-.case img {
-  max-width: 100%;
+/* Exemplo de combinador adjacente (requisito) */
+section + section { padding-top: 8px; }
+
+aside.side-note {
+  border-left: 4px solid #e67e22;
+  padding: 12px 16px;
+  background: #fafafa;
+  margin: 16px;
+}
+
+/* Imagens (requisito: img + figure) */
+figure { margin: 0; }
+
+figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* Before/after */
+.before-after {
+  display: flex;
+  gap: 16px;
+}
+.case { flex: 1; }
+
+.improvements {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+/* Esconder um elemento (requisito) */
+.is-hidden { display: none; }
+
+/* Tabela (requisito) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+thead th {
+  background: #e67e22;
+  color: #fff;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+tfoot td {
+  font-size: 0.95rem;
+  background: #fafafa;
+}
+
+/* Formulário (requisito) */
+form { margin-top: 12px; }
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+}
+legend { font-weight: 700; }
+.form-row { margin-bottom: 10px; }
+
+label { display: block; margin-bottom: 4px; }
+
+/* Seletor por atributo (requisito) */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+/* Pseudo-classe (requisito) */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #e67e22;
+  border-color: #e67e22;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.05); }
+
+/* Footer */
+.site-footer {
+  background: #2c3e50;
+  color: #fff;
+}
+.site-footer a { color: #fff; }
+
+/* Acessibilidade: link "saltar para conteúdo" (escondido até foco) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px 10px;
+  z-index: 999;
+}
+.skip-link:focus { left: 10px; }
+
+/* Responsividade para 2 dimensões (requisito) */
+@media (max-width: 900px) {
+  .container { padding: 12px; }
+  .brand-badge { right: 12px; }
+}
+
+@media (max-width: 600px) {
+  .site-nav ul > li { float: none; }
+  .before-after { flex-direction: column; }
+  body { padding-bottom: 20px; }
 }

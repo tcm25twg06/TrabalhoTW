@@ -1,60 +1,112 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identidade Visual</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Identidade Visual — TrabalhoTW</title>
 </head>
 <body>
-    <header>
-        <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="estrategia.html">Estratégia</a></li>
-                <li><a href="identidade.html" id="active">Identidade Visual</a></li>
-                <li><a href="multimedia.html">Multimédia</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-    <main>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand-badge">Grupo 6</p>
+      <h1 class="site-title">Comunicação Visual e Identidade de Marca em Multimédia</h1>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a class="is-active" href="identidade.html">Identidade Visual</a></li>
+          <li><a href="estrategia.html">Estratégia</a></li>
+          <li><a href="multimedia.html">Multimédia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
     <section>
       <h2>Identidade Visual</h2>
-      <p>A identidade visual traduz a personalidade da marca através de elementos como cor, tipografia, logótipo e composição. Quando existe consistência, a marca torna-se mais reconhecível e credível.</p>
+      <p>
+        A identidade de marca não é um único elemento isolado. É a soma de escolhas visuais e de conteúdo que
+        criam uma perceção consistente ao longo do tempo.
+      </p>
 
-      <h3>Exemplo “Antes e Depois”</h3>
-      <p>Comparação simples para mostrar como pequenas decisões de design melhoram legibilidade, hierarquia e coerência.</p>
+      <h3>Conceitos base (lista de definições)</h3>
+      <dl>
+        <dt><strong>Logótipo</strong></dt>
+        <dd>Assinatura visual da marca (símbolo, lettering e variações de uso).</dd>
+
+        <dt><strong>Tipografia</strong></dt>
+        <dd>Famílias e hierarquia de texto que reforçam personalidade e legibilidade.</dd>
+
+        <dt><strong>Paleta cromática</strong></dt>
+        <dd>Cores principais e secundárias que suportam reconhecimento e consistência.</dd>
+
+        <dt><strong>Tom de voz</strong></dt>
+        <dd>Forma como a marca “fala” (formal/informal, técnica/emocional, etc.).</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Exemplo “antes e depois” (layout)</h2>
+      <p>
+        Pequenas melhorias visuais podem aumentar clareza e confiança. Repara como <mark>hierarquia</mark>,
+        <mark>espaçamento</mark> e <mark>consistência</mark> mudam a leitura.
+      </p>
 
       <div class="before-after">
         <figure class="case">
-          <img src="assets/img/antes.png" alt="Antes (exemplo)">
-          <figcaption><strong>Antes</strong> — layout confuso e pouca hierarquia.</figcaption>
+          <img src="assets/img/antes.jpg" alt="Exemplo antes: layout com pouca hierarquia">
+          <figcaption>Antes</figcaption>
           <ul class="improvements">
-            <li>Contraste insuficiente</li>
-            <li>Tipografia inconsistente</li>
-            <li>Elementos desalinhados</li>
+            <li>Texto sem hierarquia clara</li>
+            <li>Espaçamentos irregulares</li>
+            <li>Cores pouco consistentes</li>
           </ul>
         </figure>
 
         <figure class="case">
-          <img src="assets/img/depois.png" alt="Depois (exemplo)">
-          <figcaption><strong>Depois</strong> — grelha e hierarquia mais claras.</figcaption>
+          <img src="assets/img/depois.jpg" alt="Exemplo depois: layout mais organizado">
+          <figcaption>Depois</figcaption>
           <ul class="improvements">
-            <li>Contraste e legibilidade melhorados</li>
-            <li>Tipografia e espaçamento consistentes</li>
-            <li>Hierarquia e grelha mais claras</li>
+            <li>Maior contraste e legibilidade</li>
+            <li>Grelha e alinhamentos consistentes</li>
+            <li>Prioridades visuais mais claras</li>
           </ul>
         </figure>
       </div>
+    </section>
 
-      <p><em>Nota:</em> as imagens “antes.png” e “depois.png” devem ser colocadas em <code>src/assets/img/</code>.</p>
+    <section>
+      <h2>Checklist de consistência</h2>
+
+      <ol>
+        <li>Definir regras (cores, tipografia, logótipo).</li>
+        <li>Aplicar as regras em todos os suportes (web, redes sociais, impressão).</li>
+        <li>Validar com o público e ajustar com base em feedback.</li>
+      </ol>
+
+      <ul>
+        <li>Exemplo de lista aninhada:
+          <ul>
+            <li>Guia de marca (manual simples)</li>
+            <li>Templates (posts, capas, banners)</li>
+          </ul>
+        </li>
+      </ul>
     </section>
   </main>
 
-    <footer>
-        <p>Grupo 6 — Tecnologias Web</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Grupo 6 — Tecnologias Web (2025/26)</p>
+      <address>
+        Iria Mirley de Barros Monteiro · Nicole de Campos Fernandes · Sara Cantarelo Amaral
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
+

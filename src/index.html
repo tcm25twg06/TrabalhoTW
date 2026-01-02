@@ -1,45 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunicação Visual e Identidade de Marca em Multimédia</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Início — TrabalhoTW</title>
 </head>
 <body>
-    <header>
-        <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="estrategia.html">Estratégia</a></li>
-                <li><a href="identidade.html">Identidade Visual</a></li>
-                <li><a href="multimedia.html">Multimédia</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-    <main>
-        <section>
-            <h2>Enquadramento</h2>
-            <p>Este website explica como a comunicação visual e os recursos multimédia contribuem para construir e comunicar a identidade de uma marca no contexto digital.</p>
-            <p>A identidade de marca não resulta de um único elemento isolado: é o conjunto (estratégia, design e conteúdos multimédia) que cria consistência e diferenciação.</p>
-        </section>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand-badge">Grupo 6</p>
+      <h1 class="site-title">Comunicação Visual e Identidade de Marca em Multimédia</h1>
 
-        <section>
-            <h2>O que vais encontrar</h2>
-            <ul>
-                <li><strong>Estratégia:</strong> objetivos, público-alvo, tom e coerência.</li>
-                <li><strong>Identidade Visual:</strong> logótipo, tipografia, cor, grelha e exemplos “antes/depois”.</li>
-                <li><strong>Multimédia:</strong> como imagem, vídeo, áudio e dados (XML + JavaScript) suportam a comunicação.</li>
-            </ul>
-        </section>
-    </main>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a class="is-active" href="index.html">Início</a></li>
+          <li><a href="identidade.html">Identidade Visual</a></li>
+          <li><a href="estrategia.html">Estratégia</a></li>
+          <li><a href="multimedia.html">Multimédia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>Grupo 6 — Tecnologias Web</p>
-        <address>Universidade da Maia</address>
-    </footer>
+  <main id="conteudo" class="container">
+    <section>
+      <h2>Início</h2>
+
+      <figure>
+        <img src="assets/img/hero.jpg" alt="Imagem ilustrativa sobre comunicação visual e identidade de marca">
+        <figcaption>Identidade de marca: estratégia, design e conteúdos a trabalhar em conjunto.</figcaption>
+      </figure>
+
+      <p>
+        Este website explica, de forma simples, como a <strong>comunicação visual</strong> e os recursos
+        <em class="emph">multimédia</em> contribuem para a construção e expressão da identidade de uma marca.
+      </p>
+
+      <aside class="side-note">
+        <p><strong>Nota:</strong> é um site educativo. Os exemplos e estruturas servem para demonstrar conceitos e requisitos do trabalho.</p>
+      </aside>
+
+      <p>
+        Recurso útil: <a href="https://validator.w3.org/" target="_blank" rel="noopener">Validador W3C</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>O que vais encontrar</h2>
+      <ul>
+        <li><strong>Identidade Visual:</strong> elementos (logótipo, tipografia, cor) e coerência.</li>
+        <li><strong>Estratégia:</strong> objetivos, público e consistência na comunicação.</li>
+        <li><strong>Multimédia:</strong> formatos e dados estruturados (XML) para sites.</li>
+      </ul>
+
+      <p class="is-hidden">Este parágrafo está escondido (exemplo de requisito CSS).</p>
+
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </section>
+
+    <a id="topo" href="#conteudo" class="is-hidden">Topo</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Grupo 6 — Tecnologias Web (2025/26)</p>
+      <address>
+        Iria Mirley de Barros Monteiro · Nicole de Campos Fernandes · Sara Cantarelo Amaral
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
 

@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dados></dados>
+<dados tema="Comunicação Visual e Identidade de Marca em Multimédia"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="dados.xsd">
+
+  <recurso id="r01">
+    <tipo>Imagem</tipo>
+    <nome>Logótipo (variações e aplicações)</nome>
+    <uso>Website, redes sociais, documentos</uso>
+    <descricao>Reforça reconhecimento e consistência visual.</descricao>
+  </recurso>
+
+  <recurso id="r02">
+    <tipo>Vídeo</tipo>
+    <nome>Vídeo curto de marca</nome>
+    <uso>Campanhas e apresentação</uso>
+    <descricao>Comunica valores e cria ligação emocional.</descricao>
+  </recurso>
+
+  <recurso id="r03">
+    <tipo>Áudio</tipo>
+    <nome>Identidade sonora</nome>
+    <uso>Aberturas, spots, conteúdos</uso>
+    <descricao>Ajuda a memorizar a marca através do som.</descricao>
+  </recurso>
+
+  <recurso id="r04">
+    <tipo>Animação</tipo>
+    <nome>Motion design (micro-interações)</nome>
+    <uso>Website e redes sociais</uso>
+    <descricao>Melhora experiência e reforça estilo visual.</descricao>
+  </recurso>
+
+</dados>

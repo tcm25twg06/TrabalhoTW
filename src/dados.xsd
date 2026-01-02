@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Estrutura simples, relevante para o tema (recursos multimédia de uma marca) -->
+  <xs:element name="dados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="recurso" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipo" type="xs:string"/>
+              <xs:element name="nome" type="xs:string"/>
+              <xs:element name="uso" type="xs:string"/>
+              <xs:element name="descricao" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="tema" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
 </xs:schema>

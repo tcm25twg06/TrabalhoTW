@@ -1,70 +1,100 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estratégia</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Estratégia — TrabalhoTW</title>
 </head>
 <body>
-    <header>
-        <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="estrategia.html" id="active">Estratégia</a></li>
-                <li><a href="identidade.html">Identidade Visual</a></li>
-                <li><a href="multimedia.html">Multimédia</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-    <main>
-        <section>
-            <h2>Estratégia</h2>
-            <p>Antes do design, existe estratégia: definir objetivos, público-alvo e mensagem. A comunicação visual deve apoiar a proposta de valor da marca e ser coerente em todos os pontos de contacto.</p>
-            <ul>
-                <li><strong>Público-alvo:</strong> quem é, o que valoriza, onde consome conteúdo.</li>
-                <li><strong>Tom e voz:</strong> como a marca fala e se posiciona.</li>
-                <li><strong>Consistência:</strong> manter regras visuais e editoriais para reforçar reconhecimento.</li>
-            </ul>
-        </section>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand-badge">Grupo 6</p>
+      <h1 class="site-title">Comunicação Visual e Identidade de Marca em Multimédia</h1>
 
-        <section>
-            <h2>Contacto / Receber novidades</h2>
-            <p>Este formulário serve apenas para fins educativos (simulação). A ideia é permitir ao utilizador deixar contacto para receber novidades sobre comunicação visual e identidade de marca.</p>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="identidade.html">Identidade Visual</a></li>
+          <li><a class="is-active" href="estrategia.html">Estratégia</a></li>
+          <li><a href="multimedia.html">Multimédia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <form>
-                <fieldset>
-                    <legend>Dados</legend>
+  <main id="conteudo" class="container">
+    <section>
+      <h2>Estratégia</h2>
+      <p>
+        A estratégia define <strong>o que comunicar</strong>, <strong>para quem</strong> e <strong>com que objetivo</strong>.
+        A identidade visual ganha força quando é usada de forma coerente com a mensagem.
+      </p>
 
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required><br><br>
+      <article>
+        <h3>Exemplo de planeamento (tabela)</h3>
+        <table>
+          <caption>Modelo simples de objetivos, canais e métricas</caption>
+          <thead>
+            <tr>
+              <th scope="col">Objetivo</th>
+              <th scope="col">Canal</th>
+              <th scope="col">Formato</th>
+              <th scope="col">Métrica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Reforçar notoriedade</th>
+              <td>Website</td>
+              <td>Landing + vídeo curto</td>
+              <td>Tempo médio / cliques</td>
+            </tr>
+            <tr>
+              <td>Redes sociais</td>
+              <td>Carrossel</td>
+              <td>Alcance / partilhas</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup">Gerar leads</th>
+              <td colspan="2">Formulário + email marketing</td>
+              <td>Taxa de conversão</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Nota: exemplo educativo (estrutura mínima para cumprir requisitos).</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </section>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                </fieldset>
+    <section>
+      <h2>Como manter coerência</h2>
+      <ul>
+        <li><strong>Público-alvo:</strong> necessidades, linguagem e contexto.</li>
+        <li><strong>Mensagem:</strong> promessa e valores da marca.</li>
+        <li><strong>Consistência:</strong> repetição de sinais visuais e de tom de voz.</li>
+      </ul>
 
-                <fieldset>
-                    <legend>Preferências</legend>
-                    <label>Quero receber:</label><br>
-                    <input type="radio" id="dicas" name="tipo" value="dicas" checked>
-                    <label for="dicas">Dicas e boas práticas</label><br>
-                    <input type="radio" id="casos" name="tipo" value="casos">
-                    <label for="casos">Casos de estudo</label><br><br>
+      <p>
+        Ver também: <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener">WCAG (acessibilidade)</a>.
+      </p>
+    </section>
+  </main>
 
-                    <label for="msg">Mensagem (opcional):</label><br>
-                    <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Escreve aqui..."></textarea>
-                </fieldset>
-
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>Grupo 6 — Tecnologias Web</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Grupo 6 — Tecnologias Web (2025/26)</p>
+      <address>
+        Iria Mirley de Barros Monteiro · Nicole de Campos Fernandes · Sara Cantarelo Amaral
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
+
 
