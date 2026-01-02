@@ -8,3 +8,9 @@ Na atualidade, num contexto digital cada vez mais competitivo, a forma como as m
 - Iria Mirley de Barros Monteiro
 - Nicole de Campos Fernandes
 - Sara Cantarelo Amaral ㅤ
+
+## Relatório (Markdown)
+- [C1 — Project Presentation](doc/c1.md)
+- [C2 — User Interface](doc/c2.md)
+- [C3 — Product](doc/c3.md)
+- [C4 — Presentation](doc/c4.md)
