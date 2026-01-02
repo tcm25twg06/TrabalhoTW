@@ -1,30 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estratégia — Trabalho TW</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
+    <header>
+        <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="estrategia.html" id="active">Estratégia</a></li>
+                <li><a href="identidade.html">Identidade Visual</a></li>
+                <li><a href="multimedia.html">Multimédia</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a> |
-      <a class="is-active" href="estrategia.html">Estratégia</a> |
-      <a href="identidade.html">Identidade Visual</a> |
-      <a href="multimedia.html">Multimédia</a>
-    </nav>
-  </header>
+    <main>
+        <section>
+            <h2>Estratégia</h2>
+            <p>Antes do design, existe estratégia: definir objetivos, público-alvo e mensagem. A comunicação visual deve apoiar a proposta de valor da marca e ser coerente em todos os pontos de contacto.</p>
+            <ul>
+                <li><strong>Público-alvo:</strong> quem é, o que valoriza, onde consome conteúdo.</li>
+                <li><strong>Tom e voz:</strong> como a marca fala e se posiciona.</li>
+                <li><strong>Consistência:</strong> manter regras visuais e editoriais para reforçar reconhecimento.</li>
+            </ul>
+        </section>
 
-  <main>
-    <h2>Estratégia</h2>
-    <p>(Conteúdo a desenvolver.)</p>
-  </main>
+        <section>
+            <h2>Contacto / Receber novidades</h2>
+            <p>Este formulário serve apenas para fins educativos (simulação). A ideia é permitir ao utilizador deixar contacto para receber novidades sobre comunicação visual e identidade de marca.</p>
 
-  <footer>
-    <p>Grupo 6 — Tecnologias Web</p>
-  </footer>
+            <form>
+                <fieldset>
+                    <legend>Dados</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <label>Quero receber:</label><br>
+                    <input type="radio" id="dicas" name="tipo" value="dicas" checked>
+                    <label for="dicas">Dicas e boas práticas</label><br>
+                    <input type="radio" id="casos" name="tipo" value="casos">
+                    <label for="casos">Casos de estudo</label><br><br>
+
+                    <label for="msg">Mensagem (opcional):</label><br>
+                    <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Escreve aqui..."></textarea>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Grupo 6 — Tecnologias Web</p>
+    </footer>
 </body>
 </html>
+
