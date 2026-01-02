@@ -1,91 +1,152 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimédia</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Multimédia — TrabalhoTW</title>
 </head>
 <body>
-    <header>
-        <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="estrategia.html">Estratégia</a></li>
-                <li><a href="identidade.html">Identidade Visual</a></li>
-                <li><a href="multimedia.html" id="active">Multimédia</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-    <main>
-        <section>
-            <h2>Dados (XML + Schema + JavaScript)</h2>
-            <p id="aviso">Clica no botão para carregar exemplos (a partir de <strong>dados.xml</strong>).</p>
-            <button onclick="carregarXML()">Carregar XML</button>
+  <header class="site-header">
+    <div class="container">
+      <p class="brand-badge">Grupo 6</p>
+      <h1 class="site-title">Comunicação Visual e Identidade de Marca em Multimédia</h1>
 
-            <table id="tabela-cameras">
-                <thead>
-                    <tr>
-                        <th>Marca</th>
-                        <th>Elemento / Exemplo</th>
-                        <th>Formato</th>
-                        <th>Ano</th>
-                    </tr>
-                </thead>
-                <tbody id="corpo-tabela"></tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Dados carregados do ficheiro dados.xml</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="identidade.html">Identidade Visual</a></li>
+          <li><a href="estrategia.html">Estratégia</a></li>
+          <li><a class="is-active" href="multimedia.html">Multimédia</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section>
-            <h2>Imagem</h2>
-            <p>Exemplo de integração de imagem (recurso multimédia) num contexto de comunicação.</p>
-            <img src="assets/img/camera.jpg" alt="Imagem exemplo (placeholder)">
-        </section>
+  <main id="conteudo" class="container">
+    <section>
+      <h2>Multimédia</h2>
+      <p>
+        No digital, a marca comunica através de formatos diferentes: imagem, texto, vídeo, áudio e animação.
+        A escolha do formato deve servir o objetivo e não o contrário.
+      </p>
 
-        <section>
-            <h2>Vídeo (embed)</h2>
-            <p>Exemplo de vídeo incorporado (YouTube) para explicar um conceito visual.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9urY4fLk3aU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+      <h3>Formatos e exemplos</h3>
+      <ul>
+        <li>Imagem: logótipos, fotografia, ilustração, infografia.</li>
+        <li>Vídeo: demonstrações, storytelling, anúncios curtos.</li>
+        <li>Áudio: identidade sonora, podcasts, spots.</li>
+        <li>Animação: motion design, micro-interações.</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Canvas (desenho via código)</h2>
-            <p>Exemplo de elemento Canvas para demonstrar formas/cores e reforçar o tema visual.</p>
-            <canvas id="meuCanvas" width="300" height="150"></canvas>
-        </section>
-    </main>
+    <section>
+      <h2>Dados estruturados (XML)</h2>
+      <p>
+        Nesta fase, o repositório já inclui um exemplo de <strong>dados.xml</strong> e o respetivo
+        <strong>dados.xsd</strong> para validação. A integração dinâmica com JavaScript será feita depois.
+      </p>
 
-    <footer>
-        <p>Grupo 6 — Tecnologias Web</p>
-    </footer>
+      <p>
+        Ficheiros:
+        <a href="dados.xml">dados.xml</a> ·
+        <a href="dados.xsd">dados.xsd</a>
+      </p>
 
-    <script src="script.js"></script>
-    <script>
-        // Pequeno desenho simples no canvas (igual ao conceito do JoB)
-        const c = document.getElementById("meuCanvas");
-        if (c) {
-            const ctx = c.getContext("2d");
-            if (ctx) {
-                ctx.fillStyle = "#2c3e50";
-                ctx.fillRect(10, 10, 120, 60);
-                ctx.fillStyle = "#e67e22";
-                ctx.fillRect(150, 10, 120, 60);
-                ctx.font = "14px Arial";
-                ctx.fillStyle = "#ffffff";
-                ctx.fillText("Identidade", 25, 45);
-                ctx.fillText("Multimédia", 165, 45);
-            }
-        }
-    </script>
+      <table>
+        <caption>Recursos multimédia (exemplo — será alimentado pelo XML mais tarde)</caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Recurso</th>
+            <th scope="col">Uso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>r01</td>
+            <td>Imagem</td>
+            <td>Logótipo (variações)</td>
+            <td>Website e redes sociais</td>
+          </tr>
+          <tr>
+            <td>r02</td>
+            <td>Vídeo</td>
+            <td>Vídeo curto (marca)</td>
+            <td>Apresentação / campanha</td>
+          </tr>
+          <tr>
+            <td colspan="2">r03–r04</td>
+            <td>Áudio + Animação</td>
+            <td>Identidade sonora e motion</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Tabela com thead/tbody/tfoot + colspan (rowspan está na página Estratégia).</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Receber novidades (formulário)</h2>
+      <p>
+        Exemplo simples de formulário para um site educativo (os contactos servem para receber novidades do projeto).
+      </p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Subscrever</legend>
+
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="interesse">Interesse principal</label>
+            <select id="interesse" name="interesse">
+              <option value="identidade">Identidade Visual</option>
+              <option value="estrategia">Estratégia</option>
+              <option value="multimedia">Multimédia</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreve aqui..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <input type="checkbox" name="consentimento" value="sim" required>
+              Aceito receber novidades do projeto.
+            </label>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Grupo 6 — Tecnologias Web (2025/26)</p>
+      <address>
+        Iria Mirley de Barros Monteiro · Nicole de Campos Fernandes · Sara Cantarelo Amaral
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
 
