@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Comunicação Visual e Identidade de Marca em Multimédia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+
+    <h1>Comunicação Visual e Identidade de Marca em Multimédia</h1>
+
+    <section>
+        <h2>C1 – Enquadramento do Projeto</h2>
+
+        <h3>Tema</h3>
+        <p>Comunicação Visual e Identidade de Marca em Multimédia.</p>
+
+        <h3>Objetivo</h3>
+        <p>
+            Este projeto tem como objetivo o desenvolvimento de um website dedicado à explicação
+            de como a comunicação visual e os recursos multimédia contribuem para a construção
+            e comunicação da identidade de uma marca. Num contexto digital cada vez mais competitivo,
+            a forma como as marcas se apresentam visualmente influencia a perceção do público,
+            a comunicação, a persuasão e a diferenciação.
+        </p>
+
+        <h3>Público-alvo</h3>
+        <ul>
+            <li>Estudantes de multimédia, design e comunicação</li>
+            <li>Profissionais ou interessados em branding</li>
+            <li>Público em geral interessado em comunicação digital</li>
+        </ul>
+
+        <h3>Estrutura do Website (Sitemap)</h3>
+        <ul>
+            <li>Página Inicial</li>
+            <li>Identidade Visual</li>
+            <li>Estratégia de Comunicação</li>
+            <li>Multimédia na Comunicação de Marca</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>C2 – Conteúdos e Conceitos</h2>
+
+        <h3>Identidade Visual</h3>
+        <p>
+            A identidade visual corresponde ao conjunto de elementos gráficos que representam
+            visualmente uma marca, como o logótipo, as cores e a tipografia. Estes elementos
+            permitem criar reconhecimento, coerência e diferenciação.
+        </p>
+
+        <h3>Estratégia</h3>
+        <p>
+            A estratégia de comunicação visual define como a marca se posiciona e comunica
+            com o seu público. Uma estratégia bem estruturada garante coerência e eficácia
+            na transmissão da mensagem.
+        </p>
+
+        <h3>Multimédia</h3>
+        <p>
+            A multimédia desempenha um papel fundamental na comunicação das marcas, através
+            da integração de diferentes formatos como imagem, vídeo, animação e interatividade
+            em ambientes digitais.
+        </p>
+
+        <h3>Conclusão</h3>
+        <p>
+            A identidade de marca resulta da articulação entre identidade visual, estratégia
+            e multimédia. A combinação destes elementos permite uma comunicação mais eficaz
+            e coerente nas diferentes plataformas digitais.
+        </p>
+    </section>
+
+    <section>
+        <h2>C3 – Produto / Website</h2>
+
+        <h3>Produto</h3>
+        <p>
+            O produto desenvolvido é um website informativo e educativo sobre comunicação visual
+            e identidade de marca em multimédia.
+        </p>
+
+        <h3>Para quem é</h3>
+        <p>
+            O website destina-se a estudantes, profissionais da área criativa e utilizadores
+            interessados em compreender a importância da comunicação visual no meio digital.
+        </p>
+
+        <h3>Páginas</h3>
+        <ul>
+            <li>Página Inicial</li>
+            <li>Identidade Visual</li>
+            <li>Estratégia de Comunicação</li>
+            <li>Multimédia na Comunicação de Marca</li>
+        </ul>
+
+        <h3>Objetivo do Website</h3>
+        <p>
+            Explicar de forma clara como a comunicação visual e os recursos multimédia contribuem
+            para a construção e fortalecimento da identidade de uma marca.
+        </p>
+    </section>
+    <section>
+        <h2>Verificação de Requisitos</h2>
+        <ul>
+            <li>✔ Tema definido</li>
+            <li>✔ Objetivo apresentado</li>
+            <li>✔ Público-alvo identificado</li>
+            <li>✔ Estrutura do website com 4 páginas</li>
+            <li>✔ Conceitos de Identidade Visual, Estratégia e Multimédia abordados</li>
+            <li>✔ Produto descrito</li>
+        </ul>
+    </section>
+
+    <p>Grupo 6 — Tecnologias Web</p>
+  </footer>
+</body>
+</html>
 
