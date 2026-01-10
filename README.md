@@ -78,5 +78,3 @@ Recomenda-se o uso da extensão **Live Server** no Visual Studio Code:
 - Iria Mirley de Barros Monteiro
 - Nicole de Campos Fernandes  
 - Sara Cantarelo Amaral 
-- Nicole de Campos Fernandes  
-- Sara Cantarelo Amaral  
