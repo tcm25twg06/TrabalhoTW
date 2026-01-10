@@ -1,5 +1,5 @@
 // Ler ficheiro XML e mostrar recursos na tabela
-fetch("../../dados.xml")
+fetch("dados.xml")
   .then(response => response.text())
   .then(texto => {
     const parser = new DOMParser();
