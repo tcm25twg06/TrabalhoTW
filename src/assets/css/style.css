@@ -1,46 +1,50 @@
 /* =========================================================
    Tecnologias Web — TrabalhoTW (Grupo 6)
-   CSS externo (sem estilos inline)
+   CSS externo (simples e válido)
    ========================================================= */
 
 /* Reset simples */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
+/* BODY — fundo neutro (sem imagem) */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   color: #222;
-  background-color: #f4f4f4; /* cor de fundo */
-  background-image: url("../img/pattern.svg"); /* imagem de fundo (requisito) */
-  background-repeat: repeat;
+  background-color: #f4f4f4;
 }
 
 /* Seletor por ID (requisito) */
-#conteudo { scroll-margin-top: 16px; }
+#conteudo {
+  scroll-margin-top: 16px;
+}
 
+/* Container */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 16px;
 }
 
-/* Header */
+/* =====================
+   HEADER — imagem por CSS
+   ===================== */
 .site-header {
   background-color: #2c3e50;
-  color: #fff;
-  border-bottom: 5px solid #e67e22;
-  position: relative;
-  .site-header {
-  background-image: url("../img/pattern.svg");
+  background-image: url("../img/pattern-test.jpg"); /* usa aqui a imagem que QUERES */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
- /* posicionamento (requisito) */
+  min-height: 220px; /* garante que a imagem se vê */
+  color: #fff;
+  border-bottom: 5px solid #e67e22;
+  position: relative;
 }
 
-/* Substituição de um elemento por imagem (requisito) */
+/* Badge */
 .brand-badge {
   position: absolute;
   top: 12px;
@@ -48,14 +52,13 @@ body {
   width: 120px;
   height: 40px;
   background-image: url("../img/badge.svg");
-  background-size: contain;
   background-repeat: no-repeat;
-  text-indent: -9999px; /* substitui texto pela imagem */
+  background-size: contain;
+  text-indent: -9999px;
   overflow: hidden;
-  white-space: nowrap;
 }
 
-/* Pseudo-elemento (requisito) */
+/* Pseudo-elemento */
 .site-title::after {
   content: "";
   display: block;
@@ -65,18 +68,21 @@ body {
   margin-top: 8px;
 }
 
-/* Navegação — flutuação (requisito) */
+/* =====================
+   NAVEGAÇÃO
+   ===================== */
 .site-nav ul {
-  list-style: none; /* formatação de lista (requisito) */
+  list-style: none;
   padding: 0;
   margin: 12px 0 0;
-  overflow: hidden; /* limpa floats */
+  overflow: hidden;
   background: #333;
   border-radius: 6px;
 }
 
-/* Seletor combinador (requisito) */
-.site-nav ul > li { float: left; }
+.site-nav ul > li {
+  float: left;
+}
 
 .site-nav a {
   display: block;
@@ -90,20 +96,15 @@ body {
   font-weight: 700;
 }
 
-/* Pseudo-classe (requisito) */
 .site-nav a:hover,
 .site-nav a:focus {
   background: #111;
   outline: none;
 }
 
-/* Links externos — seletor por atributo (requisito) */
-a[target="_blank"]::after {
-  content: " ↗";
-  font-size: 0.9em;
-}
-
-/* Main */
+/* =====================
+   MAIN
+   ===================== */
 main {
   background: #fff;
   margin: 16px auto;
@@ -111,34 +112,21 @@ main {
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
 }
 
-/* Texto com destaque (requisito) */
-mark {
-  background: #fff2cc;
-  padding: 0 4px;
-}
-.emph {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-/* Cartões / secções */
 section {
   padding: 16px;
   border-bottom: 1px solid #eee;
 }
 
-/* Exemplo de combinador adjacente (requisito) */
-section + section { padding-top: 8px; }
-
-aside.side-note {
-  border-left: 4px solid #e67e22;
-  padding: 12px 16px;
-  background: #fafafa;
-  margin: 16px;
+section + section {
+  padding-top: 8px;
 }
 
-/* Imagens (requisito: img + figure) */
-figure { margin: 0; }
+/* =====================
+   IMAGENS (HTML)
+   ===================== */
+figure {
+  margin: 0;
+}
 
 figure img {
   width: 100%;
@@ -152,60 +140,79 @@ figcaption {
   margin-top: 6px;
 }
 
-/* Before/after */
+/* Before / After — mantém lado a lado */
 .before-after {
   display: flex;
   gap: 16px;
 }
-.case { flex: 1; }
+
+.case {
+  flex: 1;
+}
 
 .improvements {
   margin: 10px 0 0;
   padding-left: 18px;
 }
 
-/* Esconder um elemento (requisito) */
-.is-hidden { display: none; }
-
-/* Tabela (requisito) */
+/* =====================
+   TABELAS
+   ===================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 12px;
 }
+
 caption {
   text-align: left;
   font-weight: 700;
   margin-bottom: 8px;
 }
+
 thead th {
   background: #e67e22;
   color: #fff;
 }
-th, td {
+
+th,
+td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: left;
 }
+
 tfoot td {
-  font-size: 0.95rem;
   background: #fafafa;
+  font-size: 0.95rem;
 }
 
-/* Formulário (requisito) */
-form { margin-top: 12px; }
+/* =====================
+   FORMULÁRIO
+   ===================== */
+form {
+  margin-top: 12px;
+}
 
 fieldset {
   border: 1px solid #ddd;
   padding: 12px;
   border-radius: 8px;
 }
-legend { font-weight: 700; }
-.form-row { margin-bottom: 10px; }
 
-label { display: block; margin-bottom: 4px; }
+legend {
+  font-weight: 700;
+}
 
-/* Seletor por atributo (requisito) */
+.form-row {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea,
@@ -216,7 +223,6 @@ select {
   border-radius: 6px;
 }
 
-/* Pseudo-classe (requisito) */
 input:focus,
 textarea:focus,
 select:focus {
@@ -232,16 +238,26 @@ button {
   color: #fff;
   cursor: pointer;
 }
-button:hover { filter: brightness(1.05); }
 
-/* Footer */
+button:hover {
+  filter: brightness(1.05);
+}
+
+/* =====================
+   FOOTER
+   ===================== */
 .site-footer {
   background: #2c3e50;
   color: #fff;
 }
-.site-footer a { color: #fff; }
 
-/* Acessibilidade: link "saltar para conteúdo" (escondido até foco) */
+.site-footer a {
+  color: #fff;
+}
+
+/* =====================
+   ACESSIBILIDADE
+   ===================== */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -251,16 +267,30 @@ button:hover { filter: brightness(1.05); }
   padding: 8px 10px;
   z-index: 999;
 }
-.skip-link:focus { left: 10px; }
 
-/* Responsividade para 2 dimensões (requisito) */
+.skip-link:focus {
+  left: 10px;
+}
+
+/* =====================
+   RESPONSIVO
+   ===================== */
 @media (max-width: 900px) {
-  .container { padding: 12px; }
-  .brand-badge { right: 12px; }
+  .container {
+    padding: 12px;
+  }
+
+  .brand-badge {
+    right: 12px;
+  }
 }
 
 @media (max-width: 600px) {
-  .site-nav ul > li { float: none; }
-  .before-after { flex-direction: column; }
-  body { padding-bottom: 20px; }
+  .site-nav ul > li {
+    float: none;
+  }
+
+  .before-after {
+    flex-direction: column;
+  }
 }
