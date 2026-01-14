@@ -13,6 +13,7 @@ fetch("dados.xml")
       const tipo = recursos[i].getElementsByTagName("tipo")[0].textContent;
       const nome = recursos[i].getElementsByTagName("nome")[0].textContent;
       const uso = recursos[i].getElementsByTagName("uso")[0].textContent;
+      const descricao = recursos[i].getElementsByTagName("descricao")[0].textContent;
 
       const linha = document.createElement("tr");
       linha.innerHTML = `
@@ -20,6 +21,7 @@ fetch("dados.xml")
         <td>${tipo}</td>
         <td>${nome}</td>
         <td>${uso}</td>
+        <td>${descricao}</td>
       `;
 
       tabela.appendChild(linha);

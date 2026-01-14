@@ -65,8 +65,8 @@
 
       <p>
         Ficheiros utilizados:
-        <a href="dados.xml">dados.xml</a> ·
-        <a href="dados.xsd">dados.xsd</a>
+        <a href="dados.xml" download>dados.xml</a> ·
+        <a href="dados.xsd" download>dados.xsd</a>
       </p>
     </section>
 
@@ -82,22 +82,54 @@
             <th scope="col">Tipo</th>
             <th scope="col">Recurso</th>
             <th scope="col">Uso</th>
+             <th scope="col">Descricao</th>
+
           </tr>
         </thead>
 
         <tbody id="corpo-tabela">
-          <!-- As linhas desta tabela são geradas pelo JavaScript a partir do XML -->
         </tbody>
-
-        <tfoot>
-          <tr>
-            <td colspan="4">
-              Tabela preenchida dinamicamente através de JavaScript e dados XML.
-            </td>
-          </tr>
-        </tfoot>
       </table>
     </section>
+
+<section>
+            <h2>Vídeo: Campanha </h2>
+            <p> Como criar um logótipo</p>
+            <video width="320" height="240" controls>
+                <source src="assets/Video/YTDown.com_YouTube_How-to-Design-a-Logo-From-Start-to-Finis_Media_TF4_T7yMTOA_001_1080p.mp4" type="video/mp4">
+                O teu browser não suporta a tag de vídeo.
+            </video>
+        </section>
+
+        <section>
+            <h2>Sons do Obturador</h2>
+            <p>Ouve o som satisfatório do disparo mecânico:</p>
+            <audio controls>
+                <source src="click.mp3" type="audio/mpeg">
+                O teu browser não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Tutorial do Youtube</h2>
+            <p>Para quem quer aprender mais sobre revelação em casa:</p>
+            <iframe width="714" height="535" src="https://www.youtube.com/embed/GkTWxDB21cA" title="ROSALÍA - La Perla (Official Video) ft. Yahritza Y Su Esencia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <section>
+            <h2>Canvas (Desenho via Código)</h2>
+            <p>Um retângulo desenhado automaticamente pelo browser usando a tag Canvas.</p>
+            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+
+            <script>
+                // Script simples só para desenhar no Canvas como pede o enunciado
+                var c = document.getElementById("meuCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#e67e22";
+                ctx.fillRect(10, 10, 150, 80);
+            </script>
+        </section>
 
     <section>
       <h3>Receber novidades</h3>
@@ -158,7 +190,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
+  
   <script src="script.js"></script>
 </body>
 </html>

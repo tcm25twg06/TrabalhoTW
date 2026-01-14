@@ -44,19 +44,7 @@ body {
   position: relative;
 }
 
-/* Badge */
-.brand-badge {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  width: 120px;
-  height: 40px;
-  background-image: url("../img/badge.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: -9999px;
-  overflow: hidden;
-}
+
 
 /* Pseudo-elemento */
 .site-title::after {
