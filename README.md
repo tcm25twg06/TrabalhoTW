@@ -1,12 +1,8 @@
 # TrabalhoTW — Comunicação Visual e Identidade de Marca em Multimédia
 
-Repositório para hospedar o projeto desenvolvido para a unidade curricular **Tecnologias Web** (1.º ano).  
-Projeto desenvolvido pelo **Grupo 6**.
-
-
 ## Descrição do tema
 
-Este projeto aborda o tema **Comunicação Visual e Identidade de Marca em Multimédia**, explorando de que forma a identidade visual, a estratégia de comunicação e os conteúdos multimédia (imagem, vídeo, áudio e animação) contribuem para a construção e comunicação de uma marca no contexto digital.
+Este projeto aborda o tema **Comunicação Visual e Identidade de Marca em Multimédia**, explorando de que forma a identidade visual, a estratégia de comunicação e os conteúdos multimédia (imagem, vídeo, áudio etc.) contribuem para a construção e comunicação de uma marca no contexto digital.
 
 O relatório foi escrito em **Markdown**, e o website foi desenvolvido com **HTML5, CSS3, XML/XSD e JavaScript**, respeitando os requisitos mínimos definidos pelo docente.
 
@@ -39,12 +35,6 @@ O repositório está organizado da seguinte forma:
 - **JavaScript** — carregamento dinâmico de dados XML e interação básica  
 
 
-## Estruturas e bibliotecas
-
-Não foram utilizadas bibliotecas externas ou frameworks.  
-Todo o projeto foi desenvolvido com **tecnologias web base**, de acordo com os conteúdos lecionados na unidade curricular.
-
-
 ## Relatório
 
 O relatório está dividido por capítulos, de acordo com a estrutura pedida no enunciado:
@@ -63,12 +53,6 @@ Recomenda-se o uso da extensão **Live Server** no Visual Studio Code:
 1. Abrir a pasta do projeto no VS Code
 2. Aceder à pasta `src/`
 3. Abrir o ficheiro `index.html` com **Live Server**
-
-
-## Validação
-
-- HTML e CSS validados através dos validadores oficiais do W3C  
-- XML validado com base no respetivo ficheiro XSD  
 
 
 ## Equipa
