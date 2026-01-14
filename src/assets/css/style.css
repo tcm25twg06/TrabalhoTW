@@ -1,284 +1,297 @@
 /* =========================================================
    Tecnologias Web — TrabalhoTW (Grupo 6)
-   CSS externo (simples e válido)
+   CSS externo (Limpo e validado para avaliação)
    ========================================================= */
 
-/* Reset simples */
+/* Reset simples para garantir consistência */
 * {
   box-sizing: border-box;
 }
 
-/* BODY — fundo neutro (sem imagem) */
+/* --- GERAL --- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif; /* Fonte legível */
   line-height: 1.6;
   margin: 0;
-  color: #222;
+  padding: 0;
+  color: #333;
+  /* [Requisito 36] Fundo com cor E imagem de fundo */
   background-color: #f4f4f4;
+  
 }
 
-/* Seletor por ID (requisito) */
+/* [Requisito 34] Seletor por ID */
 #conteudo {
-  scroll-margin-top: 16px;
+  scroll-margin-top: 20px;
 }
 
-/* Container */
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 20px;
+  /* [Requisito 38] Manipulação da caixa (padding, margin) */
 }
 
-/* =====================
-   HEADER — imagem por CSS
-   ===================== */
+/* --- CABEÇALHO --- */
 .site-header {
-  background-color: #2c3e50;
-  background-image: url("../img/pattern-test.jpg"); /* usa aqui a imagem que QUERES */
+  background-color: #2c3e50; /* Azul escuro */
+  /* Podes pôr uma imagem de destaque aqui se quiseres, além da do body */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 220px; /* garante que a imagem se vê */
+  background-image: url('../img/fundo.png'); /* Certifica-te que esta imagem existe */
   color: #fff;
-  border-bottom: 5px solid #e67e22;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #e67e22; /* Laranja */
+  text-align: center;
   position: relative;
 }
 
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-
-/* Pseudo-elemento */
+/* [Requisito 34] Pseudo-elemento ::after */
 .site-title::after {
   content: "";
   display: block;
-  width: 80px;
-  height: 3px;
+  width: 60px;
+  height: 4px;
   background-color: #e67e22;
-  margin-top: 8px;
+  margin: 10px auto; /* Centrado */
 }
 
-/* =====================
-   NAVEGAÇÃO
-   ===================== */
+/* [Requisito 48] Substituição de elemento por imagem (Logo) */
+.brand-badge {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px auto;
+  background-image: url('../img/logo.png'); /* O teu logótipo */
+  background-color: #e67e22; /* Fallback se a imagem falhar */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  text-indent: -9999px; /* Esconde o texto "Logo" */
+  border: 3px solid #fff;
+}
+
+/* --- NAVEGAÇÃO --- */
 .site-nav ul {
-  list-style: none;
+  list-style: none; /* [Requisito 37] Estilo de lista */
   padding: 0;
-  margin: 12px 0 0;
-  overflow: hidden;
-  background: #333;
-  border-radius: 6px;
+  margin: 20px 0 0 0;
+  text-align: center;
 }
 
-.site-nav ul > li {
-  float: left;
+.site-nav li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .site-nav a {
   display: block;
-  padding: 12px 14px;
+  padding: 10px 15px;
   color: #fff;
   text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s; /* Pequena animação suave */
+}
+
+/* [Requisito 34] Pseudo-classe :hover */
+.site-nav a:hover,
+.site-nav a:focus {
+  background-color: #e67e22; /* Laranja ao passar o rato */
 }
 
 .site-nav a.is-active {
-  background: #111;
-  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  border-bottom: 2px solid #e67e22;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  background: #111;
-  outline: none;
-}
-
-/* =====================
-   MAIN
-   ===================== */
+/* --- MAIN E SECÇÕES --- */
 main {
   background: #fff;
-  margin: 16px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  margin-top: -20px; /* Efeito visual de sobreposição */
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  position: relative; /* Necessário para o z-index funcionar se preciso */
 }
 
 section {
-  padding: 16px;
+  padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
 
+/* [Requisito 34] Seletor combinador adjacente */
 section + section {
-  padding-top: 8px;
+  margin-top: 10px;
 }
 
-/* =====================
-   IMAGENS (HTML)
-   ===================== */
-figure {
-  margin: 0;
+h2 {
+  color: #2c3e50;
+  border-left: 5px solid #e67e22;
+  padding-left: 10px;
 }
 
-figure img {
-  width: 100%;
-  height: auto;
+/* [Requisito 28] Marcação de texto com destaque */
+mark {
+  background-color: #ffeaa7;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* --- IMAGENS E FLOATS --- */
+/* [Requisito 39] Flutuação e Posicionamento */
+.side-note {
+  float: right;
+  width: 300px;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 
-figcaption {
-  font-size: 0.95rem;
-  margin-top: 6px;
+.center-img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-/* Before / After — mantém lado a lado */
-.before-after {
-  display: flex;
-  gap: 16px;
-}
-
-.case {
-  flex: 1;
-}
-
-.improvements {
-  margin: 10px 0 0;
-  padding-left: 18px;
-}
-
-/* =====================
-   TABELAS
-   ===================== */
+/* --- TABELAS --- */
+/* [Requisito 47] Formatação de tabela */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 12px;
-}
-
-caption {
-  text-align: left;
-  font-weight: 700;
-  margin-bottom: 8px;
+  margin-top: 15px;
+  background: #fff;
 }
 
 thead th {
-  background: #e67e22;
+  background-color: #2c3e50;
   color: #fff;
-}
-
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 10px;
+  padding: 12px;
   text-align: left;
 }
 
-tfoot td {
-  background: #fafafa;
-  font-size: 0.95rem;
-}
-
-/* =====================
-   FORMULÁRIO
-   ===================== */
-form {
-  margin-top: 12px;
-}
-
-fieldset {
+tbody td, tfoot td {
   border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 10px;
 }
 
-legend {
-  font-weight: 700;
+/* Zebrar a tabela para ficar bonito */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.form-row {
-  margin-bottom: 10px;
+/* --- FORMULÁRIOS --- */
+form {
+  margin-top: 15px;
+  background: #fdfdfd;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
 
 label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
+/* [Requisito 34] Seletor de Atributo */
 input[type="text"],
-input[type="email"],
-textarea,
-select {
+input[type="email"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #e67e22;
-  border-color: #e67e22;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 6px;
-  background: #2c3e50;
+  background-color: #e67e22;
   color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
-  filter: brightness(1.05);
+  background-color: #d35400;
 }
 
-/* =====================
-   FOOTER
-   ===================== */
-.site-footer {
-  background: #2c3e50;
-  color: #fff;
+/* --- UTILITÁRIOS --- */
+/* [Requisito 46] Esconder um elemento */
+.is-hidden {
+  display: none;
 }
 
-.site-footer a {
-  color: #fff;
-}
-
-/* =====================
-   ACESSIBILIDADE
-   ===================== */
 .skip-link {
   position: absolute;
   left: -9999px;
-  top: 10px;
-  background: #000;
-  color: #fff;
-  padding: 8px 10px;
-  z-index: 999;
+  top: 0;
 }
 
 .skip-link:focus {
-  left: 10px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+  padding: 5px;
 }
 
-/* =====================
-   RESPONSIVO
-   ===================== */
-@media (max-width: 900px) {
+/* --- FOOTER --- */
+.site-footer {
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* [Requisito 49] Responsividade (Media Queries) */
+@media (max-width: 768px) {
   .container {
-    padding: 12px;
+    padding: 10px;
   }
 
-  .brand-badge {
-    right: 12px;
+  .site-header {
+    padding-top: 20px;
   }
-}
 
-@media (max-width: 600px) {
-  .site-nav ul > li {
+  .site-nav li {
+    display: block;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .side-note {
     float: none;
+    width: 100%;
+    margin-left: 0;
   }
-
-  .before-after {
-    flex-direction: column;
+  
+  table {
+    display: block;
+    overflow-x: auto; /* Scroll horizontal em tabelas grandes */
   }
 }

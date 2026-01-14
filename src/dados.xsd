@@ -18,5 +18,4 @@
       <xs:attribute name="tema" type="xs:string" use="required"/>
     </xs:complexType>
   </xs:element>
-
 </xs:schema>

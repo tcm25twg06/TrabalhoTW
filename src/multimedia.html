@@ -8,14 +8,11 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
-
   <header class="site-header">
     <div class="container">
-      <p class="brand-badge">Grupo 6</p>
-      <h1 class="site-title">Comunicação Visual e Identidade de Marca em Multimédia</h1>
-
-      <nav class="site-nav" aria-label="Navegação principal">
+      <!-- <span class="brand-badge">Logo</span> -->
+      <h1 class="site-title">Identidade de Marca em Multimédia</h1>
+      <nav class="site-nav">
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="identidade.html">Identidade Visual</a></li>
@@ -26,170 +23,92 @@
     </div>
   </header>
 
-  <main id="conteudo" class="container">
+  <main class="container">
+    <article>
+        <section>
+          <h2>Multimédia</h2>
 
-    <section>
-      <h2>Multimédia</h2>
+          <p>
+            A multimédia corresponde à integração de diferentes tipos de conteúdos — texto,
+            imagem, áudio, vídeo e animação — num único ambiente digital. No contexto da
+            comunicação de marca, permite criar experiências mais ricas e envolventes.
+          </p>
 
-      <p>
-        A multimédia corresponde à integração de diferentes tipos de conteúdos — texto,
-        imagem, áudio, vídeo e animação — num único ambiente digital. No contexto da
-        comunicação de marca, permite criar experiências mais ricas e envolventes.
-      </p>
-
-      <p>
-        A escolha do formato multimédia deve servir o objetivo da comunicação e reforçar
-        a identidade visual e emocional da marca.
-      </p>
-    </section>
-
-    <section>
-      <h3>Formatos multimédia</h3>
-
-      <ul>
-        <li><strong>Imagem:</strong> logótipos, fotografia, ilustração, infografia.</li>
-        <li><strong>Vídeo:</strong> demonstrações, storytelling, anúncios curtos.</li>
-        <li><strong>Áudio:</strong> identidade sonora, podcasts, spots.</li>
-        <li><strong>Animação:</strong> motion design e micro-interações.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Dados estruturados em Tecnologias Web</h3>
-
-      <p>
-        Neste projeto, os conteúdos multimédia são representados através de dados
-        estruturados em XML. O ficheiro XML define a informação, o XSD valida a estrutura
-        e o JavaScript permite apresentar os dados dinamicamente no website.
-      </p>
-
-      <p>
-        Ficheiros utilizados:
-        <a href="dados.xml" download>dados.xml</a> ·
-        <a href="dados.xsd" download>dados.xsd</a>
-      </p>
-    </section>
-
-    <section>
-      <h3>Recursos multimédia (dados do XML)</h3>
-
-      <table>
-        <caption>Recursos multimédia carregados dinamicamente</caption>
-
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Recurso</th>
-            <th scope="col">Uso</th>
-             <th scope="col">Descricao</th>
-
-          </tr>
-        </thead>
-
-        <tbody id="corpo-tabela">
-        </tbody>
-      </table>
-    </section>
-
-<section>
-            <h2>Vídeo: Campanha </h2>
-            <p> Como criar um logótipo</p>
-            <video width="320" height="240" controls>
-                <source src="assets/Video/YTDown.com_YouTube_How-to-Design-a-Logo-From-Start-to-Finis_Media_TF4_T7yMTOA_001_1080p.mp4" type="video/mp4">
-                O teu browser não suporta a tag de vídeo.
-            </video>
+          <p>
+            A escolha do formato multimédia deve servir o objetivo da comunicação e reforçar
+            a identidade visual e emocional da marca.
+          </p>
         </section>
 
         <section>
-            <h2>Sons do Obturador</h2>
-            <p>Ouve o som satisfatório do disparo mecânico:</p>
-            <audio controls>
-                <source src="click.mp3" type="audio/mpeg">
-                O teu browser não suporta o elemento de áudio.
-            </audio>
+          <h2>Integração de Dados (XML)</h2>
+          <p>Esta tabela é preenchida automaticamente através de Javascript lendo o ficheiro <code>dados.xml</code>.</p>
+          
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>Nome</th>
+                <th>Uso</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+               </tbody>
+          </table>
+          <p><a href="dados.xml" target="_blank">Ver ficheiro XML original</a> (Requisito de fallback)</p>
         </section>
 
         <section>
-            <h2>Tutorial do Youtube</h2>
-            <p>Para quem quer aprender mais sobre revelação em casa:</p>
-            <iframe width="714" height="535" src="https://www.youtube.com/embed/GkTWxDB21cA" title="ROSALÍA - La Perla (Official Video) ft. Yahritza Y Su Esencia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Multimédia: Vídeo e Áudio</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <article style="flex: 1;">
+                    <h3>Vídeo Local</h3>
+                    <video width="300" controls>
+                        <source src="assets/media/video.mp4" type="video/mp4">
+                        O teu browser não suporta vídeo.
+                    </video>
+                </article>
 
-
-        <section>
-            <h2>Canvas (Desenho via Código)</h2>
-            <p>Um retângulo desenhado automaticamente pelo browser usando a tag Canvas.</p>
-            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000000;">
-            </canvas>
-
-            <script>
-                // Script simples só para desenhar no Canvas como pede o enunciado
-                var c = document.getElementById("meuCanvas");
-                var ctx = c.getContext("2d");
-                ctx.fillStyle = "#e67e22";
-                ctx.fillRect(10, 10, 150, 80);
-            </script>
+                <article style="flex: 1;">
+                    <h3>Áudio Local</h3>
+                    <audio controls>
+                        <source src="assets/media/audio.MP3" type="audio/mpeg">
+                        O teu browser não suporta áudio.
+                    </audio>
+                </article>
+            </div>
+            
+            <h3>Vídeo Externo (Youtube)</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sO4te2QNsHY" title="What Is Branding? 4 Minute Crash Course." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-    <section>
-      <h3>Receber novidades</h3>
+        <section>
+            <h2>Canvas (Desenho via JS)</h2>
+            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000; background: #fff;"></canvas>
+        </section>
 
-      <p>
-        Exemplo simples de formulário num site educativo. Os dados servem apenas para
-        simular a subscrição de novidades do projeto.
-      </p>
+        <section>
+          <h2>Subscrever Newsletter</h2>
+          <form id="meuFormulario" action="#" method="get">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="O teu nome..." required>
 
-      <form action="#" method="get">
-        <fieldset>
-          <legend>Subscrever</legend>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
 
-          <div class="form-row">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required>
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-          </div>
-
-          <div class="form-row">
-            <label for="interesse">Interesse principal</label>
-            <select id="interesse" name="interesse">
-              <option value="identidade">Identidade Visual</option>
-              <option value="estrategia">Estratégia</option>
-              <option value="multimedia">Multimédia</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="mensagem">Mensagem (opcional)</label>
-            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-          </div>
-
-          <div class="form-row">
-            <label>
-              <input type="checkbox" name="consentimento" required>
-              Aceito receber novidades do projeto.
-            </label>
-          </div>
-
-          <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-    </section>
-
+              <button type="submit">Enviar</button>
+          </form>
+        </section>
+    </article>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>Grupo 6 — Tecnologias Web (2025/26)</p>
-      <address>
-        Iria Mirley de Barros Monteiro · Nicole de Campos Fernandes · Sara Cantarelo Amaral
-      </address>
+      <p>Grupo 6 — Tecnologias Web</p>
     </div>
   </footer>
-
   
   <script src="script.js"></script>
 </body>
