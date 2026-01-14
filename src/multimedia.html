@@ -10,7 +10,6 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <!-- <span class="brand-badge">Logo</span> -->
       <h1 class="site-title">Identidade de Marca em Multimédia</h1>
       <nav class="site-nav">
         <ul>
@@ -25,82 +24,93 @@
 
   <main class="container">
     <article>
-        <section>
-          <h2>Multimédia</h2>
+      <section>
+        <h2>Multimédia</h2>
 
-          <p>
-            A multimédia corresponde à integração de diferentes tipos de conteúdos — texto,
-            imagem, áudio, vídeo e animação — num único ambiente digital. No contexto da
-            comunicação de marca, permite criar experiências mais ricas e envolventes.
-          </p>
+        <p>
+          A multimédia corresponde à integração de diferentes tipos de conteúdos — texto,
+          imagem, áudio, vídeo e animação — num único ambiente digital. No contexto da
+          comunicação de marca, permite criar experiências mais ricas e envolventes.
+        </p>
 
-          <p>
-            A escolha do formato multimédia deve servir o objetivo da comunicação e reforçar
-            a identidade visual e emocional da marca.
-          </p>
-        </section>
+        <p>
+          A escolha do formato multimédia deve servir o objetivo da comunicação e reforçar
+          a identidade visual e emocional da marca.
+        </p>
+      </section>
 
-        <section>
-          <h2>Integração de Dados (XML)</h2>
-          <p>Esta tabela é preenchida automaticamente através de Javascript lendo o ficheiro <code>dados.xml</code>.</p>
-          
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Tipo</th>
-                <th>Nome</th>
-                <th>Uso</th>
-                <th>Descrição</th>
-              </tr>
-            </thead>
-            <tbody id="corpo-tabela">
-               </tbody>
-          </table>
-          <p><a href="dados.xml" target="_blank">Ver ficheiro XML original</a> (Requisito de fallback)</p>
-        </section>
+      <section>
+        <h2>Integração de Dados (XML)</h2>
+        <p>Esta tabela é preenchida automaticamente através de Javascript lendo o ficheiro <code>dados.xml</code>.</p>
 
-        <section>
-            <h2>Multimédia: Vídeo e Áudio</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <article style="flex: 1;">
-                    <h3>Vídeo Local</h3>
-                    <video width="300" controls>
-                        <source src="assets/media/video.mp4" type="video/mp4">
-                        O teu browser não suporta vídeo.
-                    </video>
-                </article>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tipo</th>
+              <th>Nome</th>
+              <th>Uso</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela">
+          </tbody>
+        </table>
 
-                <article style="flex: 1;">
-                    <h3>Áudio Local</h3>
-                    <audio controls>
-                        <source src="assets/media/audio.MP3" type="audio/mpeg">
-                        O teu browser não suporta áudio.
-                    </audio>
-                </article>
-            </div>
-            
-            <h3>Vídeo Externo (Youtube)</h3>
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/sO4te2QNsHY" title="What Is Branding? 4 Minute Crash Course." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+        <p><a href="dados.xml" target="_blank">Ver ficheiro XML original</a> (Requisito de fallback)</p>
+      </section>
 
-        <section>
-            <h2>Canvas (Desenho via JS)</h2>
-            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000; background: #fff;"></canvas>
-        </section>
+      <section>
+        <h2>Multimédia: Vídeo e Áudio</h2>
 
-        <section>
-          <h2>Subscrever Newsletter</h2>
-          <form id="meuFormulario" action="#" method="get">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" placeholder="O teu nome..." required>
+        <div class="media-row">
+          <article class="media-item">
+            <h3>Vídeo Local</h3>
+            <video width="300" controls>
+              <source src="assets/media/video.mp4" type="video/mp4">
+              O teu browser não suporta vídeo.
+            </video>
+          </article>
 
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+          <article class="media-item">
+            <h3>Áudio Local</h3>
+            <audio controls>
+              <source src="assets/media/audio.MP3" type="audio/mpeg">
+              O teu browser não suporta áudio.
+            </audio>
+          </article>
+        </div>
 
-              <button type="submit">Enviar</button>
-          </form>
-        </section>
+        <h3>Vídeo Externo (Youtube)</h3>
+        <iframe
+          width="400"
+          height="315"
+          src="https://www.youtube.com/embed/sO4te2QNsHY"
+          title="What Is Branding? 4 Minute Crash Course."
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Canvas (Desenho via JS)</h2>
+        <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000; background: #fff;"></canvas>
+      </section>
+
+      <section>
+        <h2>Subscrever Newsletter</h2>
+        <form id="meuFormulario" action="#" method="get">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="O teu nome..." required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </article>
   </main>
 
@@ -109,7 +119,7 @@
       <p>Grupo 6 — Tecnologias Web</p>
     </div>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
